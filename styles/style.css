@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    /*Primary*/
+    --Red:hsl(0, 100%, 74%);
+    --Green:hsl(154, 59%, 51%);
+    /*Accent*/
+    --Blue:hsl(248, 32%, 49%);
+    /*Neutral*/
+    --greenBoxShadow:hsl(143, 57%, 43%);
+    --darkBlue:hsl(249, 10%, 26%);
+    --grayishBlue:hsl(246, 25%, 77%);
+    --white:rgb(247, 247, 247);
+    --whiteLow:rgba(255, 255, 255, 0.877);
+}
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background:url(../images/bg-intro-desktop.png),center bottom,no-repeat,hsl(0, 100%, 74%);
+    font-size:16px;
+    height:78vh;
+}
+main{
+    height:50%;
+    margin:15% 10% 0% 10%;
+    display:flex;
+    align-items:center;
+    gap:50px;
+    color:var(--white);
+}
+.title-paragraph{
+    margin-top:2%;
+    width:735px;
+}
+.title-paragraph>h1{
+    font-size:3em;
+    line-height:50px;
+    margin-bottom:28px;
+}
+.title-paragraph>p{
+    color:var(--whiteLow);
+}
+.sign-up{
+    width:800px;
+}
+.info-7daysfree{
+    width:520px;
+    background-color:var(--Blue);
+    padding:15px 0px;
+    text-align:center;
+    border-radius:10px;
+    font-size:14px;
+    color:var(--whiteLow);
+}
+.info-7daysfree>span{
+    color:white;
+    font-weight:600;
+}
+.form-register{
+    width:520px;
+    margin-top:20px;
+    background-color:white;
+    padding:40px;
+    border-radius:10px;
+}
+.form-register>form{
+    display:flex;
+    flex-direction:column;
+}
+.form-register input{
+    height:40px;
+    border:1px solid rgba(87, 87, 87, 0.596);
+    border-radius:5px;
+    margin-bottom:20px;
+    font-weight:600;
+    padding:25px 20px;
+    width:100%;
+}
+.form-register input:focus{
+    border:2px solid rgb(0, 0, 0);
+}
+.form-register p{
+    font-size:12px;
+    color:var(--grayishBlue);
+    text-align:center;
+}
+.form-register a{
+    text-decoration:none;
+    color:var(--Red);
+    font-weight:700;
+}
+button{
+    background-color:var(--Green);
+    color:var(--white);
+    border:none;
+    cursor:pointer;
+    padding:15px;
+    border-radius:6px;
+    text-transform:uppercase;
+    font-weight:500;
+    font-size:16px;
+    box-shadow:2px 3px 4px var(--greenBoxShadow);
+    margin-bottom:15px;
+}
+
+/*Config Js*/
+.firstNameDiv,.lastNameDiv,.emailDiv,.passwordDiv{
+    display:inline-block;
+    margin-top: -10px;
+}
+.firstNameDiv>p,.lastNameDiv>p,.emailDiv>p,.passwordDiv>p{
+    text-align:right;
+    margin-top:-37px/*-46px*/;
+    padding-bottom:0;
+    color:var(--Red);
+    font-weight:600;
+}
+#icon-error{
+    width:7%;
+    position:relative;
+    bottom: 61px;
+    left: 378px;
+    display:none;
+}

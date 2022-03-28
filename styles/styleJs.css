@@ -1,0 +1,19 @@
+/*Config Js*/
+.firstNameDiv,.lastNameDiv,.emailDiv,.passwordDiv{
+    display:inline-block;
+    margin-top: -10px;
+}
+.firstNameDiv>p,.lastNameDiv>p,.emailDiv>p,.passwordDiv>p{
+    text-align:right;
+    margin-top:-37px/*-46px*/;
+    padding-bottom:0;
+    color:var(--Red);
+    font-weight:600;
+}
+#icon-error{
+    width:7%;
+    position:relative;
+    bottom: 61px;
+    left: 378px;
+    display:none;
+}
